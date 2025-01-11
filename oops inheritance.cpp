@@ -1,7 +1,7 @@
 //inheritance : studnet me name aur age nahi h phir bhi errorni aaya kyuki person ki properties inherite karli student class ne
 
 #include <iostream>
-#include <string>
+#include <string>  
 using namespace std;
 
 class person{
@@ -10,12 +10,15 @@ class person{
         int age;
         
         person(){
-            
+            cout << "parent constructor" << endl ;
         }
 };
 class student:public person {
     public:
          int rollno;
+         student(){
+             cout << "child constructor " << endl;
+         }
          
          void getinfo(){
              cout << "name : " << name << endl;
