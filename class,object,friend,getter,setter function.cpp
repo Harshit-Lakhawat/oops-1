@@ -6,7 +6,7 @@ class teacher {
     private:
         double salary;   // now salary is private
     public:
-        // properties or methods
+        // properties or attributes 
         string name;
         string subjects;
         string dept;
